@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [MEA_PoC]" parallel="tests">
+  <parameter name="Login" value="dominic.ellis@centrica.com"/>
+  <parameter name="platform" value="Android"/>
+  <parameter name="Device" value="15443d67"/>
+  <parameter name="appActivity" value=".menu.BootActivity"/>
+  <parameter name="Password" value="awb12345"/>
+  <parameter name="Wait" value="60"/>
+  <parameter name="appPackage" value="com.centrica.android.britishgas"/>
+  <test name="AndroidSmoke(failed)" parallel="tests">
+    <parameter name="Login" value="dominic.ellis@centrica.com"/>
+    <parameter name="platform" value="Android"/>
+    <parameter name="Device" value="15443d67"/>
+    <parameter name="appActivity" value=".menu.BootActivity"/>
+    <parameter name="Password" value="awb12345"/>
+    <parameter name="Wait" value="60"/>
+    <parameter name="appPackage" value="com.centrica.android.britishgas"/>
+    <classes>
+      <class name="myEnergy.MEA_TestNG">
+        <methods>
+          <include name="login"/>
+          <include name="setcapability"/>
+        </methods>
+      </class> <!-- myEnergy.MEA_TestNG -->
+    </classes>
+  </test> <!-- AndroidSmoke(failed) -->
+</suite> <!-- Failed suite [MEA_PoC] -->

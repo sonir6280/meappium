@@ -1,0 +1,48 @@
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="MEA_PoC" verbose="1" parallel="tests" thread-count="2">
+
+    <test name="AndroidSmoke" >
+    
+    <parameter name="platform" value="Android"></parameter>   	
+   	<parameter name="appPackage" value="com.centrica.android.britishgas"></parameter>
+   	<parameter name="appActivity" value=".menu.BootActivity"></parameter>
+
+  		
+       <parameter name="Device" value="15443d67"></parameter>
+    
+     <parameter name="Wait" value="60"></parameter>  
+     
+     <parameter name="Login" value="dominic.ellis@centrica.com"></parameter>
+     <parameter name="Password" value="awb12345"></parameter>
+
+    <classes>
+           <class name="myEnergy.MEA_TestNG" />
+   
+ </classes>
+  </test>  
+ </suite>
+ 
+ 
+<!-- 
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="MEL_PoC" verbose="1" parallel="tests" thread-count="2">
+ 
+  <test name="iOSSmoke" >
+ 	
+     <parameter name="appiumVer" value="1.0"></parameter>  
+   	 <parameter name="platform" value="iOS"></parameter>
+   	 <parameter name="platformVer" value="8.4"></parameter>
+     <parameter name="device" value="iPad 2"></parameter>
+     <parameter name="driverURL" value="http://0.0.0.0:4723/wd/hub"></parameter>         
+     <parameter name="wait" value="60"></parameter>    
+    <classes>
+           <class name="myEnergy.MEL_AppDemo" />   
+ </classes>
+  </test>
+   </suite>
+    
+-->

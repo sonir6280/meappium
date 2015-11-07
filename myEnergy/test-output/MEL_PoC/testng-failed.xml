@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" name="Failed suite [MEL_PoC]" parallel="tests">
+  <parameter name="platform" value="iOS"/>
+  <parameter name="appiumVer" value="1.0"/>
+  <parameter name="driverURL" value="http://0.0.0.0:4723/wd/hub"/>
+  <parameter name="device" value="iPad 2"/>
+  <parameter name="platformVer" value="8.4"/>
+  <parameter name="wait" value="60"/>
+  <test name="iOSSmoke(failed)" parallel="tests">
+    <parameter name="platform" value="iOS"/>
+    <parameter name="driverURL" value="http://0.0.0.0:4723/wd/hub"/>
+    <parameter name="appiumVer" value="1.0"/>
+    <parameter name="device" value="iPad 2"/>
+    <parameter name="wait" value="60"/>
+    <parameter name="platformVer" value="8.4"/>
+    <classes>
+      <class name="myEnergy.MEL_AppDemo">
+        <methods>
+          <include name="setcapability"/>
+          <include name="test"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- myEnergy.MEL_AppDemo -->
+    </classes>
+  </test> <!-- iOSSmoke(failed) -->
+</suite> <!-- Failed suite [MEL_PoC] -->
