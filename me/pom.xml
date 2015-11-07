@@ -12,8 +12,8 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<!--   <suiteXmlFile> testNG.xml</suiteXmlFile> 
--->
+   <suiteXmlFile> testNG.xml</suiteXmlFile> 
+
 	</properties>
 
 

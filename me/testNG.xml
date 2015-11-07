@@ -2,9 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
   
 <suite name="MEA_PoC" verbose="1" parallel="tests" thread-count="2">
-
+ 
     <test name="AndroidSmoke" >
-    
+ <!--    
     <parameter name="platform" value="Android"></parameter>   	
    	<parameter name="appPackage" value="com.centrica.android.britishgas"></parameter>
    	<parameter name="appActivity" value=".menu.BootActivity"></parameter>
@@ -16,7 +16,7 @@
      
      <parameter name="Login" value="dominic.ellis@centrica.com"></parameter>
      <parameter name="Password" value="awb12345"></parameter>
-
+-->
     <classes>
            <class name="myenergy.meTest" />
    
