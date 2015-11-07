@@ -37,6 +37,8 @@ public class MEA_TestNG {
 		capabilities.setCapability("platformName", platform);
 		capabilities.setCapability("deviceName", Device);
 
+		// test to validate commit from local git repository	
+		
 		// capabilities.setCapability("appPackage",
 		// "com.centrica.android.britishgas");
 		// capabilities.setCapability("appActivity", ".menu.BootActivity");

@@ -1,6 +1,7 @@
 
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-  
+<!-- test to validate commit from local git repository  -->
+
 <suite name="MEA_PoC" verbose="1" parallel="tests" thread-count="2">
 
     <test name="AndroidSmoke" >
